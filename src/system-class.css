@@ -1,0 +1,51 @@
+.popout {
+  position: absolute;
+  
+  border: 5px solid var(--black);
+  box-shadow: 0 0 30px 5px var(--black05);
+  background-color: var(--white);
+}
+
+.symbol {
+  height: 60px;
+  width: 60px;
+}
+
+.spots {
+  /* 
+  Do not overlay text
+  */
+  background-image: url('./img/spots.png');
+  box-shadow: 0 0px 5px 5px var(--black05) inset;
+}
+
+.text-centre {
+  text-align: center;
+}
+
+.side-link-text {
+  position: absolute;
+  left: 3px;
+  top: 20px;
+
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.main-link-text {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.container {
+  padding: 12px;
+  /* 
+  52 is the header and footer sizes, 
+  container must be between a header and footer component 
+  */
+  height: calc(100% - 52px); 
+}

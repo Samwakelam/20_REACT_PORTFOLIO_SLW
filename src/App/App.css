@@ -2,14 +2,6 @@
   position: relative;
 }
 
-.popout {
-  position: absolute;
-  
-  border: 5px solid var(--black);
-  box-shadow: 0 0 30px 5px var(--black05);
-  background-color: var(--white);
-}
-
 main {
   max-width: 1200px;
   width: 80vw;
@@ -54,7 +46,6 @@ nav {
 }
 
 
-
 section {
   flex-grow: 1;
   /* height: 100%; */
@@ -66,29 +57,4 @@ section {
   box-shadow: 5px 0 30px 5px var(--black05);
 
   position: relative;
-}
-
-
-/* SCROLL BAR */
-
-::-webkit-scrollbar {
-  height: 12px;
-  width: 12px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  /* background: #edd0d0; */
-  background: #f5c5af;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #ef529c;
-  border-radius: 5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #f287b7;
 }

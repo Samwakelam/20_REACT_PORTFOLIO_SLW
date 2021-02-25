@@ -1,26 +1,24 @@
-
-
 header {
   background-color: var(--white);
-  height: 5vh; 
+  height: 35px; 
   width: 100%;
 
   /* border-radius: 10px 10px 0 0; */
 }
 
-.faux-btn, .btn {
+.faux-btn, .close-btn {
   height: 15px;
   width: 15px;
   margin: 6px 0 0 6px;
 }
 
-.btn {
+.close-btn {
   background-image: url('../img/red-button.png');
   background-size: contain;
   padding: 0;
 }
 
-.btn:hover {
+.close-btn:hover {
   transform: scale(1.2);
 }
 
@@ -28,14 +26,9 @@ footer {
   position: absolute;
   bottom: 0;
 
-  height: 2.5vh;
+  height: 17px;
   width: 100%;
   background-color: var(--white);
   /* border-radius: 0 0 10px 10px; */
 }
 
-button {
-  outline: unset;
-  background: unset;
-  border: unset;
-}
