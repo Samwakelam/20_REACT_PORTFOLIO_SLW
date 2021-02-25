@@ -1,0 +1,9 @@
+#education-popout {
+  z-index: 1;
+
+  height: 50vh;
+  width: 50vw;
+  left: 250px;
+  top: 160px;
+
+}
