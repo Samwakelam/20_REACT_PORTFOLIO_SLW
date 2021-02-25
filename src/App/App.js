@@ -61,12 +61,12 @@ function App() {
           </nav>
           <section>
             <Header />
-            <Route exact path="/web-design" component={WebPage} />
-            <Route exact path="/design" component={DesignPage} />
+            <Route exact path="/#/web-design" component={WebPage} />
+            <Route exact path="/#/design" component={DesignPage} />
 
-            <Route exact path="/about/education" component={AboutPage} />
-            <Route exact path="/about/skills" component = {AboutPage} />
-            <Route exact path="/" component={AboutPage} />
+            <Route exact path="/#/about/education" component={AboutPage} />
+            <Route exact path="/#/about/skills" component = {AboutPage} />
+            <Route exact path="/#/" component={AboutPage} />
             <Footer />
           </section>
         </Router>
