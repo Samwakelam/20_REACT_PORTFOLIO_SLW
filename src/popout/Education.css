@@ -1,9 +1,76 @@
 #education-popout {
   z-index: 1;
 
-  height: 50vh;
+  height: 480px;
   width: 50vw;
   left: 250px;
   top: 160px;
 
 }
+
+#education-content {
+  display: grid;
+  grid-template-columns: 70px auto;
+  grid-template-rows: 65px 65px 65px 65px 70px;
+}
+
+.uni-logo-sml {
+  border: 5px solid var(--black);
+
+  position:relative;
+  display: flex;
+}
+
+#logo-a {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  border-bottom: unset;
+}
+
+#logo-b {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  border-bottom: unset;
+}
+
+#logo-c {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  border-bottom: unset;
+}
+
+#logo-d {
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
+  border-bottom: unset;
+}
+
+#logo-e {
+  grid-column: 1 / span 1;
+  grid-row: 5 / span 1;
+}
+
+#item-e {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+
+  background-color: var(--red);
+  border: 5px solid var(--black);
+  border-left: unset;
+  border-bottom: unset;
+
+  padding: 0 12px;
+}
+
+#item-f {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 4;
+
+  background-color: var(--blue);
+  border: 5px solid var(--black);
+  border-left: unset;
+
+  padding: 12px;
+  overflow-y: scroll;
+}
+

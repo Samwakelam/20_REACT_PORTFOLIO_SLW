@@ -14,7 +14,7 @@ const Header = ({closePopout}) => {
   return (
     <header>
       <button onClick={onCloseClick}
-        className='btn'
+        className='close-btn'
         src={`${process.env.PUBLIC_URL}/assets/img/construction/red-button.png`}
         alt='faux button red'
       ></button>

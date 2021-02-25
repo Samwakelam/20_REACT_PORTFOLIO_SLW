@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-
 // pages
 import AboutPage from '../pages/AboutPage';
 import WebPage from '../pages/WebPage';
@@ -33,27 +32,20 @@ function App() {
   }
   
   const handleClosePopout = (popout) => {
-    console.log('handleClosePopout =', popout);
-    // if (openPopout.length === 1) {
-    //   setOpenPopout([]);
-    // } else {
-      const index = openPopout.indexOf(popout)
-      console.log('index =', index);
-      openPopout.splice(index, 1);
-      const newArray = openPopout;
-      console.log('newArray =', newArray);
-      console.log('test openPopout =', openPopout);
-      setOpenPopout(newArray);
-    // }
+    // console.log('handleClosePopout =', popout);
+    const index = openPopout.indexOf(popout);
+
+    setOpenPopout((openPopout) => {
+       const newArray = [...openPopout];
+       newArray.splice(index, 1);
+       return newArray;
+    })
   }
 
   const handleTogglePopout = (popout) => {
-    console.log('handleTogglePopout =', popout);
-    return setOpenPopout(array => [...array, popout]);
+    // console.log('handleTogglePopout =', popout);
+    return setOpenPopout((array) => [...array, popout]);
   }
-
-  console.log("openPopout.includes('skills') =", openPopout.includes('skills'));
-  console.log("openPopout.includes('education') =", openPopout.includes('education'));
 
 
   return (

@@ -16,7 +16,8 @@ const AboutPanel = ({page, onTogglePage, onTogglePopout}) => {
 
   return (
     <div className='nav-pane' id='about-nav'>
-      <div id='item-a' className='nav-item-sml'>
+
+      <div id='item-a' className='nav-item'>
         <img
           className='symbol'
           src={`${process.env.PUBLIC_URL}/assets/img/symbols/Paint-brush.png`}
@@ -26,20 +27,10 @@ const AboutPanel = ({page, onTogglePage, onTogglePopout}) => {
         <NavLink className='side-link-text' to='/about/skills' onClick={togglePopout}>Skills</NavLink>
       </div>
 
-      <div id='item-b' className='nav-item-bg'>
-        { page === 'aboutPage' ? (
-          <img id='sam-photo' src={`${process.env.PUBLIC_URL}/assets/img/sam.jpg`} alt='Sam'/>
-        ) : (
-          <NavLink className='main-link-text' to='/' onClick={togglePage} >About Sam</NavLink>
-        ) }
-      </div>
-
-      <div id='item-c' className='nav-item-sml spots'>
-
-      </div>
+      <div id='item-b' className='nav-item spots'></div>
         
-      <div id='item-d' className='nav-item-sml'>
-      <NavLink className='link-symbol' to='/about/education'>
+      <div id='item-c' className='nav-item'>
+      <NavLink to='/about/education'>
         <div data-popout='education'></div>
           <img
             className='symbol'
@@ -48,6 +39,14 @@ const AboutPanel = ({page, onTogglePage, onTogglePopout}) => {
             onClick={togglePopout}
           />
         </NavLink>
+      </div>
+
+      <div id='item-d' className='nav-item'>
+        { page === 'aboutPage' ? (
+          <img id='sam-photo' src={`${process.env.PUBLIC_URL}/assets/img/sam.jpg`} alt='Sam'/>
+        ) : (
+          <NavLink className='main-link-text' to='/' onClick={togglePage} >About Sam</NavLink>
+        ) }
       </div>
       
     </div>
