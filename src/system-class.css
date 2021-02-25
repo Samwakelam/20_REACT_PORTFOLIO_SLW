@@ -49,3 +49,8 @@
   */
   height: calc(100% - 52px); 
 }
+
+.nav-item {
+  position:relative;
+  display: flex;
+}

@@ -11,8 +11,25 @@ const WebDesignPanel = ({page, onTogglePage}) => {
   }
 
   return (
-    <div className='nav-pane'>
-      <NavLink to='/web-design' onClick={togglePage}> Web Design </NavLink>
+    <div className='nav-pane' id='web-design-nav'>
+
+      <div id='item-g' className='nav-item'>
+        <NavLink className='main-link-text' to='/web-design' onClick={togglePage}> Web Design </NavLink>
+      </div>
+
+      <div id='item-h' className='nav-item'>
+        <img
+          className='symbol'
+          src={`${process.env.PUBLIC_URL}/assets/img/symbols/github-clear.png`}
+          alt='University cap'
+          // onClick={togglePopout}
+        />
+        <a id='github-profile' className='side-link-text text-centre' href='https://github.com/Samwakelam' target='_blank' > Git Hub </a>
+      </div>
+      <div id='item-i' className='nav-item spots'>
+        
+      </div>
+      
     </div>
   )
 
