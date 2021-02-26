@@ -12,6 +12,9 @@ import AboutPage from '../pages/AboutPage';
 import WebPage from '../pages/WebPage';
 import DesignPage from '../pages/DesignPage';
 
+// aside pages
+import WebAside from '../sidePages/WebAside';
+
 // nav panels
 import AboutPanel from '../navPanels/AboutPanel';
 import WebDesignPanel from '../navPanels/WebDesignPanel';
@@ -69,6 +72,11 @@ function App() {
             <Route exact path="/" component={AboutPage} />
             <Footer />
           </section>
+          <aside>
+            <Header />
+            <Route exact path="/web-design" component={WebAside} />
+            <Footer />
+          </aside>
         </Router>
       </main>
       { openPopout.includes('skills') && (<Skills closePopout = {handleClosePopout}/>) }

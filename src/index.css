@@ -68,6 +68,20 @@ p {
   margin: 6px 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:focus {
+  outline: unset;
+}
+
 button {
   outline: unset;
   background: unset;
