@@ -21,10 +21,10 @@ const WebDesignPanel = ({page, onTogglePage}) => {
         <img
           className='symbol'
           src={`${process.env.PUBLIC_URL}/assets/img/symbols/github-clear.png`}
-          alt='University cap'
+          alt='Git hub logo'
           // onClick={togglePopout}
         />
-        <a id='github-profile' className='side-link-text text-centre' href='https://github.com/Samwakelam' target='_blank' > Git Hub </a>
+        <a id='github-profile' className='side-link-text text-centre' rel="noreferrer" href='https://github.com/Samwakelam' target='_blank' > Git Hub </a>
       </div>
       <div id='item-i' className='nav-item spots'>
         

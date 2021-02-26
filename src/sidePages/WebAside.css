@@ -1,0 +1,63 @@
+.minor-project-containter {
+  display: grid;
+  grid-template-columns: 150px 56px;
+  grid-template-rows: 150px 56px ;
+  border: 5px solid var(--black);
+  margin-bottom: 18px;
+}
+
+.project-tile {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: var(--white);
+}
+
+.project-about {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+
+  background-color: var(--grey);
+  border-top: 5px solid var(--black);
+ 
+  display: flex;
+  justify-content: center;
+}
+
+.project-about > button {
+  width: 100px;
+  
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.project-github {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+
+  background-color: var(--red);
+  border-top: 5px solid var(--black);
+  border-left: 5px solid var(--black);
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+.project-board {
+  width: 100%;
+  box-shadow: 0 0px 5px 5px var(--black05);
+  cursor: pointer;
+}
+
+.spots {
+  border-left: 5px solid var(--black);
+}
+
+.symbol-sml {
+  height: 50px;
+  width: 50px;
+}
