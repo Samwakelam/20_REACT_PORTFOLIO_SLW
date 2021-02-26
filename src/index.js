@@ -3,14 +3,20 @@ import ReactDOM from 'react-dom';
 import App from './App/App';
 import reportWebVitals from './stats/reportWebVitals';
 
+// context
+import { SiteContextProvider } from './SiteContext';
+
 // system styles
 import './index.css';
 import './system-class.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SiteContextProvider>
+      <App />
+    </SiteContextProvider>
   </React.StrictMode>,
+
   document.getElementById('root')
 );
 

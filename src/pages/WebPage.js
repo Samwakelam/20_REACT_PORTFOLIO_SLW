@@ -1,6 +1,18 @@
+import { useContext } from 'react';
+import SiteContext from "../SiteContext";
+// styles
 import './WebPage.css';
 
-const WebPage = () => {
+const WebPage = ({location}) => {
+  const { handleSiteLocation } = useContext(SiteContext);
+
+  // console.log(location);
+
+  const handleLocation = () => {
+    handleSiteLocation(location.pathname);
+  }
+  handleLocation();
+
   return (
     <article id='web-design-page' className='container'>
       <h1>Web Design</h1>

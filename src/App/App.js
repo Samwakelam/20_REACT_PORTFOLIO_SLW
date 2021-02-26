@@ -27,12 +27,8 @@ import Education from '../popout/Education';
 
 function App() {
 
-  const [openPage , setOpenPage] = useState('aboutPage');
   const [openPopout, setOpenPopout] = useState([]);
 
-  const handleTogglePage = (page) => {
-    return setOpenPage(page);
-  }
   
   const handleClosePopout = (popout) => {
     // console.log('handleClosePopout =', popout);
@@ -50,7 +46,6 @@ function App() {
     // console.log('is in open popout =', openPopout.includes(popout));
     let isInOpenPopout = openPopout.includes(popout);
     if (!isInOpenPopout) {return setOpenPopout((array) => [...array, popout]);}
-    
   }
   // console.log('openPopout =', openPopout);
 
@@ -60,16 +55,25 @@ function App() {
         <Router path='/20_REACT_PORTFOLIO_SLW'>
           <nav>
             <Header />
-            <AboutPanel page={openPage} onTogglePage={handleTogglePage} onTogglePopout={handleTogglePopout} />
-            <WebDesignPanel page={openPage} onTogglePage={handleTogglePage} />
-            <DesignPanel page={openPage} onTogglePage={handleTogglePage} />
+            <AboutPanel  onTogglePopout={handleTogglePopout} />
+            <WebDesignPanel />
+            <DesignPanel  />
             <Footer />
           </nav>
           <section>
             <Header />
-            <Route exact path="/web-design" component={WebPage} />
-            <Route exact path="/design" component={DesignPage} />
-            <Route exact path="/" component={AboutPage} />
+            <Route 
+              exact path="/web-design" 
+              render={ (props) => <WebPage {...props}  />} 
+            />
+            <Route 
+              exact path="/design-history" 
+              render={ (props) => <DesignPage {...props}  />} 
+            />
+            <Route 
+              exact path="/" 
+              render={ (props) => <AboutPage {...props}  /> } 
+            />
             <Footer />
           </section>
           <aside>
@@ -77,8 +81,7 @@ function App() {
             <Route 
               exact path="/web-design" 
               render={(props) => 
-                <WebAside {...props} 
-                onTogglePage={handleTogglePage} 
+                <WebAside {...props}  
                 onTogglePopout={handleTogglePopout} 
                 openPopout= {openPopout}
                 closePopout = {handleClosePopout}
