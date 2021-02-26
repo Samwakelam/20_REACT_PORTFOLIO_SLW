@@ -9,7 +9,7 @@ const AboutPanel = ({page, onTogglePage, onTogglePopout}) => {
   }
 
   const togglePopout = (event) => {
-    console.log('About panel, togglePopout, selected =', event.target.previousSibling.dataset.popout);
+    // console.log('About panel, togglePopout, selected =', event.target.previousSibling.dataset.popout);
     const popout = event.target.previousSibling.dataset.popout;
     onTogglePopout(popout);
   }
@@ -24,14 +24,14 @@ const AboutPanel = ({page, onTogglePage, onTogglePopout}) => {
           alt='paint brush'
           data-popout='skills'
         />
-        <NavLink className='side-link-text' to='/about/skills' onClick={togglePopout}>Skills</NavLink>
+        <NavLink className='side-link-text' to='/about' onClick={togglePopout}>Skills</NavLink>
       </div>
 
       <div id='item-b' className='nav-item spots'></div>
         
       <div id='item-c' className='nav-item'>
-      <NavLink to='/about/education'>
-        <div data-popout='education'></div>
+        <NavLink to='/about'>
+          <div data-popout='education'></div>
           <img
             className='symbol'
             src={`${process.env.PUBLIC_URL}/assets/img/symbols/university-clear.png`}

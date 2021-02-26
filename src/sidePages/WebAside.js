@@ -3,8 +3,9 @@ import { useState } from 'react';
 
 import DescriptionBox from '../popout/DescriptionBox'
 
-const WebAside = () => {
+const WebAside = ({onTogglePage, onTogglePopout, openPopout, closePopout}) => {
 
+  
   const [projectCode, setProjectCode] = useState('');
   const [location, setLocation] = useState({top:'0px', left: '250px'});
 
@@ -13,12 +14,14 @@ const WebAside = () => {
     event.stopPropagation();
     
     // console.log('event.target.dataset.projectcode =', event.target.dataset.projectcode);
-    console.log('event =', event);
+    // console.log('event =', event);
     setProjectCode(event.target.dataset.projectcode);
     setLocation({
       top: `${event.pageY -960}px`,
       left: `250px`,
-    })
+    });
+    const popout = 'description';
+    onTogglePopout(popout);
   }
 
   return (
@@ -228,7 +231,8 @@ const WebAside = () => {
         </div>
       </div>
 
-      <DescriptionBox selected={projectCode} location= {location} />
+      { openPopout.includes('description') && (<DescriptionBox selected={projectCode} location= {location} closePopout = {closePopout} />) }
+      
 
     </div>
   )
