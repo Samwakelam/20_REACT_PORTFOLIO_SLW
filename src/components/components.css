@@ -31,3 +31,73 @@ footer {
   background-color: var(--white);
   /* border-radius: 0 0 10px 10px; */
 }
+
+/* ToolTip */
+
+.tooltip {
+  display: grid;
+  grid-template-rows: auto;
+
+  background-color: var(--yellow);
+  border: 2px solid var(--black);
+  border-radius: 5px;
+  box-shadow: 0 0 20px 5px var(--black05);
+  color: var(--black);
+  font-weight: bold;
+  font-size: 16px;
+  max-width: 200px;
+}
+
+.tooltip > h6 {
+  background-color: var(--yellowLight);
+  padding:5px;
+  margin: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.tooltip > p {
+  padding:5px;
+  margin: 0;
+}
+
+.arrow,
+.arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  /* background-image: linear-gradient(to top right, var(--black) 50%, transparent 50%); */
+}
+
+.arrow {
+  visibility: hidden;
+}
+
+.arrow::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
+}
+
+.tooltip[data-popper-placement^='top'] > .arrow {
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip[data-popper-placement^='bottom'] > .arrow {
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip[data-popper-placement^='left'] > .arrow {
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip[data-popper-placement^='right'] > .arrow {
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
