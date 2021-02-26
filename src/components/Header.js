@@ -7,8 +7,14 @@ const Header = ({closePopout}) => {
     event.stopPropagation();
 
     console.log('event.target.parentNode =', event.target.parentNode.parentNode.dataset.popout);
-    const popout = event.target.parentNode.parentNode.dataset.popout
-    return closePopout(popout); 
+    const popout = event.target.parentNode.parentNode.dataset.popout;
+    console.log('popout =', popout);
+    if (popout === undefined){
+      console.log('You cannot close this window');
+    } else {
+      console.log('You have closed this window');
+      return closePopout(popout); 
+    }
   }
 
   return (

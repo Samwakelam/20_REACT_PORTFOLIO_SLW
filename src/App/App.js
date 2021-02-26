@@ -44,17 +44,20 @@ function App() {
        return newArray;
     })
   }
-
+  
   const handleTogglePopout = (popout) => {
     // console.log('handleTogglePopout =', popout);
-    return setOpenPopout((array) => [...array, popout]);
+    // console.log('is in open popout =', openPopout.includes(popout));
+    let isInOpenPopout = openPopout.includes(popout);
+    if (!isInOpenPopout) {return setOpenPopout((array) => [...array, popout]);}
+    
   }
-
+  // console.log('openPopout =', openPopout);
 
   return (
     <div id="App">
       <main>
-        <Router>
+        <Router path='/20_REACT_PORTFOLIO_SLW'>
           <nav>
             <Header />
             <AboutPanel page={openPage} onTogglePage={handleTogglePage} onTogglePopout={handleTogglePopout} />
@@ -66,15 +69,21 @@ function App() {
             <Header />
             <Route exact path="/web-design" component={WebPage} />
             <Route exact path="/design" component={DesignPage} />
-
-            <Route exact path="/about/education" component={AboutPage} />
-            <Route exact path="/about/skills" component = {AboutPage} />
             <Route exact path="/" component={AboutPage} />
             <Footer />
           </section>
           <aside>
             <Header />
-            <Route exact path="/web-design" component={WebAside} />
+            <Route 
+              exact path="/web-design" 
+              render={(props) => 
+                <WebAside {...props} 
+                onTogglePage={handleTogglePage} 
+                onTogglePopout={handleTogglePopout} 
+                openPopout= {openPopout}
+                closePopout = {handleClosePopout}
+              />}
+            />
             <Footer />
           </aside>
         </Router>
