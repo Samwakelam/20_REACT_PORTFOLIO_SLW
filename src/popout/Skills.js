@@ -14,18 +14,20 @@ const Skills = ({closePopout}) => {
           <div className='skills-container' >
             <h4>Coding Skills</h4>
             <div className='' >
-              <ToolTip name={'photoshop'}/>
-              <ToolTip name={'indesign'}/>
-              <ToolTip name={'revit'}/>
-              <ToolTip name={'autocad'}/>
-              <ToolTip name={'word'}/>
-              <ToolTip name={'powerpoint'}/>
-              <ToolTip name={'excel'}/>
-              <ToolTip name={'outlook'}/>
-              <ToolTip name={'sketchup'}/>
-              <ToolTip name={'dreamweaver'}/>
-              <ToolTip name={'illustrator'}/>
-              <ToolTip name={'vray'}/>
+              <ToolTip name={'npm'}/>
+              <ToolTip name={'sequelize'}/>
+              <ToolTip name={'sql'}/>
+              <ToolTip name={'mongo'}/>
+              <ToolTip name={'mongoose'}/>
+              <ToolTip name={'visualstudiocode'}/>
+              <ToolTip name={'git'}/>
+              <ToolTip name={'github'}/>
+              <ToolTip name={'html'}/>
+              <ToolTip name={'javascript'}/>
+              <ToolTip name={'css'}/>
+              <ToolTip name={'bootstrap'}/>
+              <ToolTip name={'semantics'}/>
+              <ToolTip name={'postman'}/>
             </div>
           </div>
           <div className='skills-container' >
