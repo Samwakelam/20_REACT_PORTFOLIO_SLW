@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/20_REACT_PORTFOLIO_SLW/static/css/main.8752ec3d.chunk.css",
-    "main.js": "/20_REACT_PORTFOLIO_SLW/static/js/main.99a76377.chunk.js",
-    "main.js.map": "/20_REACT_PORTFOLIO_SLW/static/js/main.99a76377.chunk.js.map",
-    "runtime-main.js": "/20_REACT_PORTFOLIO_SLW/static/js/runtime-main.626db753.js",
-    "runtime-main.js.map": "/20_REACT_PORTFOLIO_SLW/static/js/runtime-main.626db753.js.map",
-    "static/js/2.4e87ae1f.chunk.js": "/20_REACT_PORTFOLIO_SLW/static/js/2.4e87ae1f.chunk.js",
-    "static/js/2.4e87ae1f.chunk.js.map": "/20_REACT_PORTFOLIO_SLW/static/js/2.4e87ae1f.chunk.js.map",
-    "static/js/3.57146fdd.chunk.js": "/20_REACT_PORTFOLIO_SLW/static/js/3.57146fdd.chunk.js",
-    "static/js/3.57146fdd.chunk.js.map": "/20_REACT_PORTFOLIO_SLW/static/js/3.57146fdd.chunk.js.map",
+    "main.css": "/20_REACT_PORTFOLIO_SLW/static/css/main.8a872542.chunk.css",
+    "main.js": "/20_REACT_PORTFOLIO_SLW/static/js/main.a716ae24.chunk.js",
+    "main.js.map": "/20_REACT_PORTFOLIO_SLW/static/js/main.a716ae24.chunk.js.map",
+    "runtime-main.js": "/20_REACT_PORTFOLIO_SLW/static/js/runtime-main.9d5c3528.js",
+    "runtime-main.js.map": "/20_REACT_PORTFOLIO_SLW/static/js/runtime-main.9d5c3528.js.map",
+    "static/js/2.6440920b.chunk.js": "/20_REACT_PORTFOLIO_SLW/static/js/2.6440920b.chunk.js",
+    "static/js/2.6440920b.chunk.js.map": "/20_REACT_PORTFOLIO_SLW/static/js/2.6440920b.chunk.js.map",
+    "static/js/3.98842583.chunk.js": "/20_REACT_PORTFOLIO_SLW/static/js/3.98842583.chunk.js",
+    "static/js/3.98842583.chunk.js.map": "/20_REACT_PORTFOLIO_SLW/static/js/3.98842583.chunk.js.map",
     "index.html": "/20_REACT_PORTFOLIO_SLW/index.html",
-    "static/css/main.8752ec3d.chunk.css.map": "/20_REACT_PORTFOLIO_SLW/static/css/main.8752ec3d.chunk.css.map",
-    "static/js/2.4e87ae1f.chunk.js.LICENSE.txt": "/20_REACT_PORTFOLIO_SLW/static/js/2.4e87ae1f.chunk.js.LICENSE.txt"
+    "static/css/main.8a872542.chunk.css.map": "/20_REACT_PORTFOLIO_SLW/static/css/main.8a872542.chunk.css.map",
+    "static/js/2.6440920b.chunk.js.LICENSE.txt": "/20_REACT_PORTFOLIO_SLW/static/js/2.6440920b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.626db753.js",
-    "static/js/2.4e87ae1f.chunk.js",
-    "static/css/main.8752ec3d.chunk.css",
-    "static/js/main.99a76377.chunk.js"
+    "static/js/runtime-main.9d5c3528.js",
+    "static/js/2.6440920b.chunk.js",
+    "static/css/main.8a872542.chunk.css",
+    "static/js/main.a716ae24.chunk.js"
   ]
 }
