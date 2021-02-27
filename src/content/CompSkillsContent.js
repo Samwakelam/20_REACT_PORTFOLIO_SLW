@@ -7,7 +7,7 @@ const CompSkillsContent = ({ name }) => {
       <p className='text-centre' >
         I use photoshop daily creating renders for work.
         I also use Photoshop in my own time to improve my photographs 
-        or for graphics projects of my own."
+        or for graphics projects of my own.
       </p>
       </>);
     case 'indesign':
@@ -30,7 +30,7 @@ const CompSkillsContent = ({ name }) => {
         <p className='text-centre' >
         I used Dreamweaver for my first online portfolio website.
         I am now studying Fullstacked coding as I descovered a real
-        interest for the mathmatical side of creative problem solving."          
+        interest for the mathmatical side of creative problem solving.       
         </p>
         </>);
     case 'sketchup':
@@ -45,7 +45,7 @@ const CompSkillsContent = ({ name }) => {
         <h6 className='text-centre'>V-Ray</h6>
         <p className='text-centre' >
           I have a years experience rendering with V-ray; 
-          I found my photography skills very benifical."       
+          I found my photography skills very benifical.       
         </p>
         </>);
     case 'revit':

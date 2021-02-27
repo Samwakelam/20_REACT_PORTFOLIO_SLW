@@ -25,6 +25,7 @@ header {
 footer {
   position: absolute;
   bottom: 0;
+  z-index: 0;
 
   height: 17px;
   width: 100%;
@@ -37,6 +38,7 @@ footer {
 .tooltip {
   display: grid;
   grid-template-rows: auto;
+  z-index: 1;
 
   background-color: var(--yellow);
   border: 2px solid var(--black);
@@ -49,6 +51,8 @@ footer {
 }
 
 .tooltip > h6 {
+  z-index: 1;
+
   background-color: var(--yellowLight);
   padding:5px;
   margin: 0;
@@ -56,6 +60,7 @@ footer {
 }
 
 .tooltip > p {
+  z-index: 1;
   padding:5px;
   margin: 0;
 }
@@ -63,6 +68,8 @@ footer {
 .arrow,
 .arrow::before {
   position: absolute;
+  z-index: 1;
+
   width: 8px;
   height: 8px;
   /* background-image: linear-gradient(to top right, var(--black) 50%, transparent 50%); */
@@ -70,34 +77,40 @@ footer {
 
 .arrow {
   visibility: hidden;
+  z-index: 1;
 }
 
 .arrow::before {
   visibility: visible;
   content: '';
   transform: rotate(45deg);
+  z-index: 1;
 }
 
 .tooltip[data-popper-placement^='top'] > .arrow {
   bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .tooltip[data-popper-placement^='bottom'] > .arrow {
   top: -4px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .tooltip[data-popper-placement^='left'] > .arrow {
   right: -4px;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 1;
 }
 
 .tooltip[data-popper-placement^='right'] > .arrow {
   left: -4px;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 1;
 }

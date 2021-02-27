@@ -20,7 +20,7 @@ const AboutPanel = ({page, onTogglePage, onTogglePopout}) => {
       <div id='item-a' className='nav-item'>
         <img
           className='symbol'
-          src={`${process.env.PUBLIC_URL}/assets/img/symbols/Paint-brush.png`}
+          src={`${process.env.PUBLIC_URL}/assets/img/symbols/paintbrush.png`}
           alt='paint brush'
           data-popout='skills'
         />

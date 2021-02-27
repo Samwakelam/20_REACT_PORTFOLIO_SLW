@@ -3,10 +3,7 @@ import './components.css';
 import React, { useState } from 'react';
 import {Manager, Reference, Popper} from 'react-popper';
 
-// content
-import CompSkillsContent from '../content/CompSkillsContent';
-
-const ToolTip = ({name}) => {
+const ToolTip = ({name, children}) => {
   
   const [showElement, setShowElement] = useState(false);
 
@@ -41,7 +38,7 @@ const ToolTip = ({name}) => {
           {({ ref, style, placement,}) => (
             <div ref={ref} style={style} >
               <div className="tooltip" role="tooltip" data-popper-placement={placement}>
-                <CompSkillsContent name={name}/>
+                {children}
                 <div className="arrow" data-popper-arrow></div>
               </div>
               
