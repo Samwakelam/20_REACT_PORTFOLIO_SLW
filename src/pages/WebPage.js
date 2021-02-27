@@ -5,9 +5,15 @@ const WebPage = () => {
     <article id='web-design-page' className='container'>
       <h1>Web Design</h1>
       <p>
-        Choose from any of the large picture tile links to take you through to the corresponding project in a separate tab.
+        Click any of the large picture tiles to take you through to the corresponding project in a separate tab.
         Alternatively, to access the README file and discover the project progress and motivations,
         click on the corresponding Github button link.
+      </p>
+
+      <p>
+        Look out for the small projects on the aside for minor projects that display my progression week to week. 
+        The large pictures will take you through to the deployment, the Github logo goes to the repository, 
+        and the project description will open a small popout window to give a little more information on the project.
       </p>
 
       <div className='major-project-container'>

@@ -1,6 +1,6 @@
 #about-nav {
   grid-template-columns: 65px auto;
-  grid-template-rows: 65px 65px 70px;
+  grid-template-rows: 70px 60px 70px;
 }
 
 #item-a {
@@ -9,13 +9,13 @@
 
   border-top: 5px solid var(--black);
   border-right: 5px solid var(--black);
+  border-bottom: 5px solid var(--black);
 }
 
 #item-b {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
 
-  border-top: 5px solid var(--black);
   border-right: 5px solid var(--black);
 }
 
