@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import SiteContext from "../SiteContext";
 // styles
 import './WebPage.css';
@@ -7,11 +7,13 @@ const WebPage = ({location}) => {
   const { handleSiteLocation } = useContext(SiteContext);
 
   // console.log(location);
+  useEffect(() => {
+    const handleLocation = () => {
+      handleSiteLocation(location.pathname);
+    }
+    handleLocation();
 
-  const handleLocation = () => {
-    handleSiteLocation(location.pathname);
-  }
-  handleLocation();
+  }, []);
 
   return (
     <article id='web-design-page' className='container'>

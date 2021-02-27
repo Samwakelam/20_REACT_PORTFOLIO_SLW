@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import SiteContext from "../SiteContext";
 // styles
 import './AboutPage.css'
@@ -10,13 +10,16 @@ const AboutPage = ({location}) => {
   const { handleSiteLocation } = useContext(SiteContext);
 
   // console.log(location);
+ useEffect(() => {
+   const handleLocation = () => {
+     console.log('location.pathname =', location.pathname);
+     if(!location.pathname){
+       handleSiteLocation(location.pathname);
+     }
+   }
+   handleLocation();
 
-  const handleLocation = () => {
-    if(!location.pathname){
-      handleSiteLocation(location.pathname);
-    }
-  }
-  handleLocation();
+ },[]);
 
   return (
     <article id='main-about-page' className='container' >

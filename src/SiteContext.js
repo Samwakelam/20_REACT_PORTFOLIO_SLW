@@ -10,7 +10,7 @@ const SiteContextProvider = ({children}) => {
     setSiteLocation(location); 
   }
 
-  console.log('SiteContext, siteLocation =', siteLocation)
+  console.log('SiteContext, siteLocation =', siteLocation);
 
   return (
     <SiteContext.Provider value={{ siteLocation, handleSiteLocation }}>

@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import SiteContext from "../SiteContext";
 // styles
 import './DesignPage.css';
@@ -9,10 +9,13 @@ const DesignPage = ({location}) => {
 
   console.log(location);
 
-  const handleLocation = () => {
-    handleSiteLocation(location.pathname);
-  }
-  handleLocation();
+  useEffect(() => {
+    const handleLocation = () => {
+      handleSiteLocation(location.pathname);
+    }
+    handleLocation();
+
+  }, []);
 
   return (
     <article id='design-history-page' className='container'>
