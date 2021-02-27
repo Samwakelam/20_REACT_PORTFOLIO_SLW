@@ -46,7 +46,10 @@ const AboutPanel = ({onTogglePopout}) => {
         {siteLocation === '/' ? (
           <img id='sam-photo' src={`${process.env.PUBLIC_URL}/assets/img/sam.jpg`} alt='Sam'/>
         ) : (
+          <div>
           <NavLink className='main-link-text' to='/' >About Sam</NavLink>
+          <img id='sam-logo' src={`${process.env.PUBLIC_URL}/assets/img/logo-clear.png`} alt ='logo-sam'/>
+          </div>
         ) }
       </div>
       

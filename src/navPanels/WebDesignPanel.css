@@ -9,9 +9,29 @@
 
   border-top: 5px solid var(--black);
   border-bottom: 5px solid var(--black);
+  justify-content: center;
+  align-items: center;
+}
+
+#item-g > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
   padding: 12px;
   justify-content: center;
+  /* position: relative; */
 }
+
+#item-g > div > div > img {
+  padding: 6px;
+}
+
+#item-g > div > div {
+  display: flex;
+  justify-content: center;
+}
+
 
 #item-h {
   grid-column: 1 / span 1;
@@ -42,4 +62,9 @@ transform: unset;
   width: 50px;
   top: 3px;
   left: 65px;
+}
+
+#coding-sam {
+  height: 110px;
+  border-radius: 5px;
 }
