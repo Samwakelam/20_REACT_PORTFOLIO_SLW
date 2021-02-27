@@ -1,25 +1,14 @@
-import { useContext, useEffect } from 'react';
-import SiteContext from "../SiteContext";
 // styles
 import './AboutPage.css'
 // content
 import AboutPageIntro from '../content/AboutPageIntro';
+// hooks
+import useSiteLocation from '../hooks/useSiteLocation';
 
 
-const AboutPage = ({location}) => {
-  const { handleSiteLocation } = useContext(SiteContext);
+const AboutPage = ({ location }) => {
 
-  // console.log(location);
- useEffect(() => {
-   const handleLocation = () => {
-     console.log('location.pathname =', location.pathname);
-     if(!location.pathname){
-       handleSiteLocation(location.pathname);
-     }
-   }
-   handleLocation();
-
- },[]);
+  useSiteLocation(location)
 
   return (
     <article id='main-about-page' className='container' >

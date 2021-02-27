@@ -1,9 +1,37 @@
 #skills-popout {
   z-index: 1;
 
-  height: 75vh;
+  /* height: 75vh; */
   width: 40vw;
   right: 50px;
   top: 60px;
 
+}
+
+.skills-container {
+  border: 5px solid var(--black);
+  margin-bottom: 36px;
+
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.skills-container > h4 {
+  background-color: var(--blue);
+  margin: 0;
+  padding: 10px;
+}
+
+.skills-container > div {
+  padding: 10px;
+  box-shadow: 0 0 10px 5px var(--black05) inset;
+  background-color: var(--white);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skills-container > div > button > img {
+  box-shadow: 0 0 20px 5px var(--black05);
 }

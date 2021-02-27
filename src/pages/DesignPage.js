@@ -1,21 +1,14 @@
-import { useContext, useEffect } from 'react';
-import SiteContext from "../SiteContext";
 // styles
 import './DesignPage.css';
+// hooks
+import useSiteLocation from '../hooks/useSiteLocation';
 
 
 const DesignPage = ({location}) => {
-  const { handleSiteLocation } = useContext(SiteContext);
 
   console.log(location);
 
-  useEffect(() => {
-    const handleLocation = () => {
-      handleSiteLocation(location.pathname);
-    }
-    handleLocation();
-
-  }, []);
+  useSiteLocation(location);
 
   return (
     <article id='design-history-page' className='container'>

@@ -25,6 +25,11 @@
   padding: 3px;
 }
 
+#item-h  > img {
+transform: unset;
+}
+
+
 #item-i {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;

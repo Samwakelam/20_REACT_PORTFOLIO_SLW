@@ -53,11 +53,19 @@
   cursor: pointer;
 }
 
-.spots {
+.project-board:hover {
+  transform: scale(1.02);
+}
+
+.minor-project-containter>.spots {
   border-left: 5px solid var(--black);
 }
 
 .symbol-sml {
   height: 50px;
   width: 50px;
+}
+
+.symbol-sml:hover {
+  transform: scale(1.05);
 }

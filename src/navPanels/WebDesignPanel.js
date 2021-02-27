@@ -12,6 +12,7 @@ const WebDesignPanel = () => {
       </div>
 
       <div id='item-h' className='nav-item'>
+        
         <img
           className='symbol'
           src={`${process.env.PUBLIC_URL}/assets/img/symbols/github-clear.png`}
@@ -19,6 +20,7 @@ const WebDesignPanel = () => {
           // onClick={togglePopout}
         />
         <a id='github-profile' className='side-link-text text-centre' rel="noreferrer" href='https://github.com/Samwakelam' target='_blank' > Git Hub </a>
+        
       </div>
       <div id='item-i' className='nav-item spots'>
         
