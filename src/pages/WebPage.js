@@ -1,6 +1,12 @@
+// styles
 import './WebPage.css';
+// hooks
+import useSiteLocation from '../hooks/useSiteLocation';
 
-const WebPage = () => {
+const WebPage = ({location}) => {
+
+  useSiteLocation(location);
+
   return (
     <article id='web-design-page' className='container'>
       <h1>Web Design</h1>

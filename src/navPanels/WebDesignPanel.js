@@ -2,19 +2,13 @@ import './WebDesignPanel.css'
 
 import { NavLink } from "react-router-dom";
 
-const WebDesignPanel = ({page, onTogglePage}) => {
-
-  // console.log('page =', page, page === 'aboutPage');
-
-  const togglePage = () => {
-    onTogglePage('webDesignPage');
-  }
+const WebDesignPanel = () => {
 
   return (
     <div className='nav-pane' id='web-design-nav'>
 
       <div id='item-g' className='nav-item'>
-        <NavLink className='main-link-text' to='/web-design' onClick={togglePage}> Web Design </NavLink>
+        <NavLink className='main-link-text' to='/web-design'> Web Design </NavLink>
       </div>
 
       <div id='item-h' className='nav-item'>

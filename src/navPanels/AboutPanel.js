@@ -1,12 +1,13 @@
+import { useContext } from 'react';
+import { NavLink } from "react-router-dom";
+import SiteContext from "../SiteContext";
+// styles
 import './AboutPanel.css'
 
-import { NavLink } from "react-router-dom";
 
-const AboutPanel = ({page, onTogglePage, onTogglePopout}) => {
+const AboutPanel = ({onTogglePopout}) => {
 
-  const togglePage = () => {
-    onTogglePage('aboutPage');
-  }
+  const { siteLocation } = useContext(SiteContext);
 
   const togglePopout = (event) => {
     // console.log('About panel, togglePopout, selected =', event.target.previousSibling.dataset.popout);
@@ -24,13 +25,13 @@ const AboutPanel = ({page, onTogglePage, onTogglePopout}) => {
           alt='paint brush'
           data-popout='skills'
         />
-        <NavLink className='side-link-text' to='/about' onClick={togglePopout}>Skills</NavLink>
+        <NavLink className='side-link-text' to='/' onClick={togglePopout}>Skills</NavLink>
       </div>
 
       <div id='item-b' className='nav-item spots'></div>
         
       <div id='item-c' className='nav-item'>
-        <NavLink to='/about'>
+        <NavLink to='/'>
           <div data-popout='education'></div>
           <img
             className='symbol'
@@ -42,10 +43,10 @@ const AboutPanel = ({page, onTogglePage, onTogglePopout}) => {
       </div>
 
       <div id='item-d' className='nav-item'>
-        { page === 'aboutPage' ? (
+        {siteLocation === '/' ? (
           <img id='sam-photo' src={`${process.env.PUBLIC_URL}/assets/img/sam.jpg`} alt='Sam'/>
         ) : (
-          <NavLink className='main-link-text' to='/' onClick={togglePage} >About Sam</NavLink>
+          <NavLink className='main-link-text' to='/' >About Sam</NavLink>
         ) }
       </div>
       
