@@ -11,6 +11,10 @@
   width: 60px;
 }
 
+.symbol:hover {
+  transform: scale(1.1);
+}
+
 .spots {
   /* 
   Do not overlay text
