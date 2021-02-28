@@ -1,0 +1,28 @@
+
+div.thumbs-wrapper.axis-vertical {
+  display: flex;
+  justify-content: center;
+}
+
+ul.thumbs.animated {
+  padding: 0;
+}
+
+.slider-container {
+  width: 51vw;
+  height: 100%;
+  top:0px; /* set top and left 0 */
+  left:0px;
+}
+
+.slider-item-div {
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-style {
+  height: 100% !important;
+}
