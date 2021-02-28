@@ -1,0 +1,59 @@
+#design-nav {
+  display: grid;
+  grid-template-columns: 175px 65px;
+  grid-template-rows: 65px 65px 70px;
+}
+
+#item-j {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 3;
+
+  border-top: 5px solid var(--black);
+  border-bottom: 5px solid var(--black);
+  padding: 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#item-k {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+
+  background-color: var(--red);
+  border-top: 5px solid var(--black);
+  border-left: 5px solid var(--black);
+}
+
+#item-l {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+
+  background-color: var(--white);
+  border-top: 5px solid var(--black);
+  border-left: 5px solid var(--black); 
+}
+
+#item-m {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+
+  background-color: var(--yellow);
+  border-top: 5px solid var(--black);
+  border-left: 5px solid var(--black);
+  border-bottom: 5px solid var(--black);
+}
+
+#fashion {
+  width: 150px;
+  height: 84px;
+  border: 2px solid var(--black);
+}
+
+#fashion-skirt {
+  height: 170px;
+  border: 5px solid var(--white);
+  background-color: var(--white);
+}

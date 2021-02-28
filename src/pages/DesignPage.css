@@ -1,0 +1,11 @@
+.design-section {
+  border: 5px solid var(--black);
+  background-color: var(--white);
+  margin-bottom: 36px;
+}
+
+.design-section > h2 {
+  margin: 0;
+  background-color: var(--red);
+
+}
