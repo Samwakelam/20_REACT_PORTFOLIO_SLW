@@ -1,4 +1,4 @@
-# Employee Directory - React 
+# Portfolio - React 
 
 This is a remodel of my portfolio built entirely in react with various npm packages included to maintain similar functionality to my week 8 portfolio. 
 
