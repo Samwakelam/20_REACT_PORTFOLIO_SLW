@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter as Router, Route } from "react-router-dom";
 
 // components
 import Header from '../components/Header';
@@ -52,7 +52,7 @@ function App() {
   return (
     <div id="App">
       <main>
-        <Router path='/20_REACT_PORTFOLIO_SLW'>
+        <HashRouter basname='/'>
           <nav>
             <Header />
             <AboutPanel  onTogglePopout={handleTogglePopout} />
@@ -89,7 +89,7 @@ function App() {
             />
             <Footer />
           </aside>
-        </Router>
+        </HashRouter>
       </main>
       { openPopout.includes('skills') && (<Skills closePopout = {handleClosePopout}/>) }
       { openPopout.includes('education') && (<Education closePopout = {handleClosePopout} />) }
