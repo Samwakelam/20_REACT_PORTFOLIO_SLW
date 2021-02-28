@@ -9,3 +9,11 @@
   background-color: var(--red);
 
 }
+
+.project-description {
+  border: 5px solid var(--blue);
+  box-shadow: 0 0 20px 5px var(--black05);
+
+  padding: 6px;
+}
+

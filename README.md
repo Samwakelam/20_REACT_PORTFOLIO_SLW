@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Employee Directory - React 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a remodel of my portfolio built entirely in react with various npm packages included to maintain similar functionality to my week 8 portfolio. 
 
-## Available Scripts
+I have redesigned the full look of the website and created some different navigational elements. it is a demonstration of how much I have learnt in 20 intense weeks of Full stack web coding bootcamp.  
 
-In the project directory, you can run:
+It is not yet mobile responsive but I aim for it to be in the short term. 
 
-### `npm start`
+## Contents: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. [Screen Shots](#Screes-shots)
+2. [Improvements](#Improvements)
+3. [Updates](#Updates)
+4. [Credits](#Credits)
+5. [License](#License)
+6. [Contact](#Contact)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This is not a project designed to be copied, the content is all copyright to myself and is original content not to be reproduced or used on any other site.
 
-### `npm test`
+### Project dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* React
+* React-responsive npm package (future update). 
+* React-responsive-carousel
+* React-popper
+* React-dom and react-router-dom
+* gh-pages
 
-### `npm run build`
+### Technologies 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Languages I have used are:
+* Javascript
+* HTML
+* CSS
+* React
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screen Shots 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![about page](public/assets/img/screenshots/screenshot3.png)
+![webdesign page](public/assets/img/screenshots/screenshot2.png)
+![design history page](public/assets/img/screenshots/screenshot1.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Improvements
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Additions to be added: 
+* Cv online and download copy for employers.
+* Project 3 on completion of the course.
+* Brand statment needs readdressing on the front page. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+I would like to add: 
+* Mobile Responsiveness.
+* There is plenty of white space in areas, this needs content adding or feature readjustment where appropriate. 
+* The deployment has known routing issues through github pages and so the refresh ability results in a 404, this needs addressing when I have more time.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+I have considered that it might be benificial to store some of my information skills and design data in a database that can then be called and mapped into components for better use of the react application. 
 
-## Learn More
+## Updates 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+There are no updates at this time.
+    
+## Credits 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Resources I have referenced:   
+* docs.mongodb.com
+* mongoosejs.com
 
-### Code Splitting
+## License 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* GNU GPL v3<br />  
 
-### Analyzing the Bundle Size
+Where appropriate: 
+Alot of the graphics included in my projects I have drawn myself and are copyright 2021. 
+No useage without permission. 
+If I have not originated the imagery I have gained the permission of the owner and acreditied 
+where necessary. These are also not for re-purpose without permission of the owner.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+You must make reference where the code originated. I would also love to see what changes and improvements you make.  
+Design by Samantha Wakelam, please respect copyright 2020. 
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Name: Samantha Wakelam  <br />Email: sam.wakelam@hotmail.co.uk <br />Github Profile: Sam Wakelam 
