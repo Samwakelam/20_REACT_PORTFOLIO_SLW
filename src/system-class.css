@@ -69,3 +69,11 @@
   position:relative;
   display: flex;
 }
+
+.inline-block {
+  display: inline-block;
+}
+
+.margin-6 {
+  margin: 6px;
+}

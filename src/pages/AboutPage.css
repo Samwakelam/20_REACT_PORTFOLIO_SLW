@@ -2,3 +2,25 @@
   /* padding: 12px; */
 }
 
+.paragraph-details {
+  display: flex;
+  align-items: center;
+}
+
+#contact-details > div:last-child {
+  margin-bottom: 12px;
+}
+
+#contact-details, div.paragraph {
+  border: 5px solid var(--black);
+  background-color: var(--white);
+
+  margin-bottom: 36px;
+  padding: 12px;
+}
+
+#contact-details > h2 {
+  background-color: var(--red);
+  padding: 6px;
+  margin-top: 0;
+}
